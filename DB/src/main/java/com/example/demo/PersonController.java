@@ -29,4 +29,14 @@ public class PersonController {
         }
         return emails;
     }
+    @GetMapping("/{email}/{id}")
+    public List<Person> getNameofPerson(@PathVariable String email,@PathVariable UUID id){ //Return a specific name and email inside of DB
+        List<Person> emails = new ArrayList();
+        for(Person person: DB){
+            if(person.getEmail().equals(email) && person.getId().equals(id)){ //Returns based on if the email AND the UUID match exactly.
+                emails.add(person);
+            }
+        }
+        return emails;
+    }
 }
