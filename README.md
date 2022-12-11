@@ -1,5 +1,5 @@
 # HTTP-Requests-Backend
-This is a project that takes in a .JSON file from applications such as POSTMAN, .JSON should contain a email and a name, when sent program will assign a UUID specific to the object.
+This is a project that takes in a .JSON file from applications such as POSTMAN, .JSON should contain a email and a name, when sent program will assign a UUID specific to the object. Created using Java Spring
 
 .JSON requests should be sent in this format:
 
